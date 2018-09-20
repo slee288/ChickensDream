@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flappy Bird using JS | by learnWD</title>
+  </head>
+  <body onload="beginning()">
+    <canvas id="canvas" width="288" height="512" style="border:1px solid #000000;">
+    </canvas>
+    <button type="button" id="start" onClick="initialize()">START</button>
+    <button type="button" id="jump1">R</button>
+    <button type="button" id="jump2">B</button>
+    <button type="button" id="jump3">G</button>
+    <button type="button" id="jump4">Y</button>
+    <div id="box"></div>
+    <script src="flappyBird.js"></script>
+    <style>
+      #box {
+        position: absolute;
+        border: 1px solid black;
+        background-color: #FFFFFF;
+        top: 450px;
+        left: 110px;
+        width: 80px;
+        height: 40px;
+        display: none;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 40px;
+      }
+
+      #start {
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        background-color: #00FFFF;
+        border-radius: 12px;
+      }
+
+      #jump1 {
+        position: absolute;
+        top: 450px;
+        left: 15px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: #FF0000;
+        display: none;
+      }
+
+      #jump2 {
+        position: absolute;
+        top: 450px;
+        left: 250px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: #0000FF;
+        display: none;
+      }
+
+      #jump3 {
+        position: absolute;
+        top: 450px;
+        left: 65px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: #008000;
+        display: none;
+      }
+
+      #jump4 {
+        position: absolute;
+        top: 450px;
+        left: 200px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: #FFFF00;
+        display: none;
+      }
+    </style>
+  </body>
+</html>
